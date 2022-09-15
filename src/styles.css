@@ -66,3 +66,8 @@ span {
 .card-text {
   font-size: 26px;
 }
+
+sourcecode {
+  color: cornflowerblue;
+  text-decoration: underline;
+}

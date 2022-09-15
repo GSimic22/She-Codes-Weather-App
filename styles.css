@@ -1,0 +1,68 @@
+body {
+  background-image: url("images/cloud.jpg");
+  width: 100%;
+}
+
+h1 {
+  color: darkslategrey;
+  text-align: center;
+  font-weight: bolder;
+  padding: 20px;
+  border: 1px solid darkslategrey;
+  border-radius: 25px;
+  font-family: "Montserrat", sans-serif;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(239, 246, 249) 0%,
+    rgb(206, 239, 253) 90%
+  );
+}
+
+span {
+  text-align: left;
+}
+.col-curr {
+  font-size: 24px;
+  color: darkslategray;
+  border-radius: 25px;
+  border: 1px solid;
+  text-align: center;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(239, 246, 249) 0%,
+    rgb(206, 239, 253) 90%
+  );
+}
+
+.col {
+  text-align: center;
+}
+
+.search-form {
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(239, 246, 249) 0%,
+    rgb(206, 239, 253) 90%
+  );
+  background-color: cornflowerblue;
+  border-radius: 10px;
+  border: 1px solid black;
+  color: whitesmoke;
+}
+
+.card-current {
+  text-align: center;
+  font-weight: bold;
+  font: 24px;
+}
+
+.card-title {
+  padding-bottom: 80px;
+  color: darkblue;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 26px;
+}

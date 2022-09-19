@@ -1,75 +1,74 @@
 body {
-  background-image: url("images/clouds.jpg");
-  width: 100%;
+  font-family: arial, sans-serif;
 }
 
 h1 {
-  color: darkslategrey;
-  text-align: center;
-  font-weight: bolder;
+  color: #878787;
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  color: rgb(135, 135, 135);
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 19px;
+}
+
+li:first-letter {
+  text-transform: capitalize;
+}
+
+.weather-app-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.weather-app {
   padding: 20px;
-  border: 1px solid darkslategrey;
-  border-radius: 25px;
-  font-family: "Montserrat", sans-serif;
-  background: radial-gradient(
-    circle at 10% 20%,
-    rgb(239, 246, 249) 0%,
-    rgb(206, 239, 253) 90%
-  );
+  border: 1px solid #dadde1;
+  border-radius: 5px;
 }
 
-span {
-  text-align: left;
-}
-.col-curr {
-  font-size: 24px;
-  color: darkslategray;
-  border-radius: 25px;
-  border: 1px solid;
-  text-align: center;
-  background: radial-gradient(
-    circle at 10% 20%,
-    rgb(239, 246, 249) 0%,
-    rgb(206, 239, 253) 90%
-  );
+.overview {
+  margin-bottom: 20px;
 }
 
-.col {
-  text-align: center;
+.weather-temperature img {
+  margin-right: 5px;
+  height: 64px;
+  width: 64px;
 }
 
-.search-form {
-  background: radial-gradient(
-    circle at 10% 20%,
-    rgb(239, 246, 249) 0%,
-    rgb(206, 239, 253) 90%
-  );
-  background-color: cornflowerblue;
-  border-radius: 10px;
-  border: 1px solid black;
-  color: whitesmoke;
+.weather-temperature strong {
+  color: rgb(33, 33, 33);
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 400;
 }
 
-.card-current {
-  text-align: center;
-  font-weight: bold;
-  font: 24px;
+.weather-temperature .units {
+  position: relative;
+  font-size: 16px;
+  top: -34px;
 }
 
-.card-title {
-  padding-bottom: 80px;
-  color: darkblue;
-  font-size: 24px;
-  font-weight: bold;
+.weather-temperature .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
 }
 
-.card-text {
-  font-size: 26px;
-}
-
-source-code {
-  color: cornflowerblue;
-  text-decoration: underline;
-  margin-top: 25px;
-  font-family:Georgia, 'Times New Roman', Times, serif;
+.weather-temperature .active:hover {
+  text-decoration: none;
 }

@@ -27,8 +27,9 @@ font-size: 24px;
 
 }
 
-description:first-letter {
+li:first-letter {
   text-transform: capitalize;
+  list-style: none;
 }
 
 .weather-app-wrapper {

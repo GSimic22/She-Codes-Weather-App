@@ -21,6 +21,55 @@ function formatDate(timestamp) {
   let day = days[date.getDay()];
   return `${day} ${hours}:${minutes}`;
 }
+function displayForecast(){
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class ="row">`;
+forecastHTML = 
+forecastHTML + 
+`
+ <div class="col-2">
+    <div class="weather-forecast-date"> 
+    Thu
+    </div>
+    <img src="http://openweathermap.org/img/wn/04d@2x.png"
+    alt=""
+    width="42"
+    />
+    <div class ="weather-forecast-temp">
+    <span class = "weather-forecast-temp-max">
+      18°
+      </span> 
+      <span class = "weather-forecast-temp-min">
+        12°
+      </span>
+    </div>
+  </div>
+`;
+forecastHTML =
+  forecastHTML +
+  `
+ <div class="col-2">
+    <div class="weather-forecast-date"> 
+    Thu
+    </div>
+    <img src="http://openweathermap.org/img/wn/04d@2x.png"
+    alt=""
+    width="42"
+    />
+    <div class ="weather-forecast-temp">
+    <span class = "weather-forecast-temp-max">
+      18°
+      </span> 
+      <span class = "weather-forecast-temp-min">
+        12°
+      </span>
+    </div>
+  </div>
+`;
+forecastHTML = forecastHTML + `</div>`;
+forecastElement.innerHTML = forecastHTML;
+}
 
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
@@ -29,7 +78,7 @@ function displayTemperature(response) {
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
   let dateElement = document.querySelector("#date");
-    let iconElement = document.querySelector("#icon");
+  let iconElement = document.querySelector("#icon");
 
   celsiusTemperature = response.data.main.temp;
 
@@ -89,3 +138,5 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search("New York");
+ displayForecast();
+
